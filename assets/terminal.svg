@@ -33,10 +33,10 @@
       .tail { animation: wag 1.15s ease-in-out infinite; transform-box: fill-box; transform-origin: 0% 100%; }
       @keyframes wag { 0%, 100% { transform: rotate(-8deg); } 50% { transform: rotate(9deg); } }
 
-      .earL { animation: earl 3s ease-in-out infinite; transform-box: fill-box; transform-origin: 60% 0%; }
-      .earR { animation: earr 3s ease-in-out infinite; transform-box: fill-box; transform-origin: 40% 0%; }
-      @keyframes earl { 0%, 100% { transform: rotate(0deg); } 40% { transform: rotate(-4deg); } 70% { transform: rotate(2deg); } }
-      @keyframes earr { 0%, 100% { transform: rotate(0deg); } 40% { transform: rotate(4deg); } 70% { transform: rotate(-2deg); } }
+      .earL { animation: earl 3s ease-in-out infinite; transform-box: fill-box; transform-origin: 38% 100%; }
+      .earR { animation: earr 3s ease-in-out infinite; transform-box: fill-box; transform-origin: 62% 100%; }
+      @keyframes earl { 0%, 100% { transform: rotate(0deg); } 40% { transform: rotate(-6deg); } 70% { transform: rotate(3deg); } }
+      @keyframes earr { 0%, 100% { transform: rotate(0deg); } 40% { transform: rotate(6deg); } 70% { transform: rotate(-3deg); } }
 
       .tongue { animation: pant 1.3s ease-in-out infinite; }
       @keyframes pant { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(3.5px); } }
@@ -83,19 +83,15 @@
   <!-- head -->
   <circle cx="232" cy="186" r="82" fill="url(#headG)"/>
 
-  <!-- floppy ears (over the sides of the head) -->
+  <!-- erect ears -->
   <g class="earL">
-    <ellipse cx="152" cy="212" rx="33" ry="64" transform="rotate(-9 152 212)" fill="#D9A055"/>
-    <ellipse cx="154" cy="220" rx="19" ry="46" transform="rotate(-9 154 220)" fill="#C88F42"/>
+    <path d="M174 148 C 144 112 136 72 152 50 C 174 68 214 96 238 110 Z" fill="#D9A055"/>
+    <path d="M182 142 C 160 112 152 82 160 64 C 178 82 206 104 226 114 Z" fill="#C88F42"/>
   </g>
   <g class="earR">
-    <ellipse cx="312" cy="212" rx="33" ry="64" transform="rotate(9 312 212)" fill="#D9A055"/>
-    <ellipse cx="310" cy="220" rx="19" ry="46" transform="rotate(9 310 220)" fill="#C88F42"/>
+    <path d="M290 148 C 320 112 328 72 312 50 C 290 68 250 96 226 110 Z" fill="#D9A055"/>
+    <path d="M282 142 C 304 112 312 82 304 64 C 286 82 258 104 238 114 Z" fill="#C88F42"/>
   </g>
-
-  <!-- head tuft -->
-  <path d="M228 106 C 224 88 238 82 234 96" stroke="#EDBB78" stroke-width="6" fill="none" stroke-linecap="round"/>
-  <path d="M244 108 C 246 92 258 90 252 102" stroke="#EDBB78" stroke-width="5" fill="none" stroke-linecap="round"/>
 
   <!-- muzzle -->
   <ellipse cx="232" cy="224" rx="56" ry="34" fill="#FFF6E9"/>
