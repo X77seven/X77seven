@@ -34,7 +34,7 @@
   <!-- backdrop -->
   <rect width="880" height="420" rx="18" fill="#FFFBF3"/>
 
-  <g opacity="0.13" fill="#F6C173" stroke="#1A1A1A" stroke-width="6">
+  <g opacity="0.13" fill="#F6C173" stroke="#1A1A1A" stroke-width="4">
     <use href="#paw" transform="translate(62,34) rotate(16) scale(0.7)"/>
     <use href="#paw" transform="translate(840,394) rotate(-14) scale(0.9)"/>
   </g>
@@ -44,65 +44,69 @@
 
     <!-- tail -->
     <g class="tail">
-      <path d="M314 330 C 352 326 368 300 356 274" stroke="#1A1A1A" stroke-width="14" fill="none" stroke-linecap="round"/>
-      <path d="M314 330 C 352 326 368 300 356 274" stroke="#F6C173" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M314 330 C 352 326 368 300 356 274" stroke="#1A1A1A" stroke-width="11" fill="none" stroke-linecap="round"/>
+      <path d="M314 330 C 352 326 368 300 356 274" stroke="#F6C173" stroke-width="9" fill="none" stroke-linecap="round"/>
     </g>
 
     <!-- body -->
-    <ellipse cx="210" cy="300" rx="112" ry="96" fill="#F6C173" stroke="#1A1A1A" stroke-width="14"/>
-    <ellipse cx="148" cy="368" rx="58" ry="36" fill="#F6C173" stroke="#1A1A1A" stroke-width="14"/>
-    <ellipse cx="272" cy="368" rx="58" ry="36" fill="#F6C173" stroke="#1A1A1A" stroke-width="14"/>
-    <g stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" fill="none">
-      <path d="M180 330 L 176 400"/>
-      <path d="M224 330 L 228 400"/>
+    <ellipse cx="210" cy="300" rx="112" ry="96" fill="#F6C173" stroke="#1A1A1A" stroke-width="12"/>
+
+    <!-- hind legs, spread wider apart -->
+    <ellipse cx="124" cy="368" rx="58" ry="36" fill="#F6C173" stroke="#1A1A1A" stroke-width="12"/>
+    <ellipse cx="296" cy="368" rx="58" ry="36" fill="#F6C173" stroke="#1A1A1A" stroke-width="12"/>
+    <g stroke="#1A1A1A" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M148 322 L 126 394"/>
+      <path d="M272 322 L 294 394"/>
     </g>
 
     <!-- ears, up on the sides -->
     <g transform="rotate(-12 88 136)"><g class="earL">
-      <ellipse cx="88" cy="136" rx="30" ry="48" fill="#F6C173" stroke="#1A1A1A" stroke-width="14"/>
+      <ellipse cx="88" cy="136" rx="30" ry="48" fill="#F6C173" stroke="#1A1A1A" stroke-width="12"/>
     </g></g>
     <g transform="rotate(12 332 136)"><g class="earR">
-      <ellipse cx="332" cy="136" rx="30" ry="48" fill="#F6C173" stroke="#1A1A1A" stroke-width="14"/>
+      <ellipse cx="332" cy="136" rx="30" ry="48" fill="#F6C173" stroke="#1A1A1A" stroke-width="12"/>
     </g></g>
 
     <!-- head -->
-    <rect x="80" y="76" width="260" height="224" rx="98" fill="#F6C173" stroke="#1A1A1A" stroke-width="14"/>
+    <rect x="80" y="76" width="260" height="224" rx="98" fill="#F6C173" stroke="#1A1A1A" stroke-width="12"/>
 
-    <!-- head tufts -->
-    <g stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" fill="none">
-      <path d="M176 80 C 170 62 180 54 184 64"/>
-      <path d="M210 72 C 208 54 220 52 220 62"/>
-      <path d="M244 80 C 250 64 260 62 258 72"/>
+    <!-- head tufts, just two -->
+    <g stroke="#1A1A1A" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M182 80 C 176 62 186 56 189 65"/>
+      <path d="M240 80 C 246 64 256 62 254 72"/>
     </g>
 
-    <!-- eyes -->
+    <!-- brows -->
+    <g stroke="#B6792D" stroke-width="7" stroke-linecap="round" fill="none">
+      <path d="M144 146 C 152 137 170 136 179 143"/>
+      <path d="M241 143 C 250 136 268 137 276 146"/>
+    </g>
+
+    <!-- eyes: bigger, with catchlights -->
     <g class="blink">
-      <circle cx="162" cy="172" r="13" fill="#1A1A1A"/>
-      <circle cx="258" cy="172" r="13" fill="#1A1A1A"/>
+      <ellipse cx="162" cy="174" rx="15.5" ry="17" fill="#1A1A1A"/>
+      <ellipse cx="258" cy="174" rx="15.5" ry="17" fill="#1A1A1A"/>
+      <circle cx="156" cy="166" r="5.6" fill="#FFFFFF"/>
+      <circle cx="252" cy="166" r="5.6" fill="#FFFFFF"/>
+      <circle cx="168" cy="182" r="2.7" fill="#FFFFFF" opacity="0.9"/>
+      <circle cx="264" cy="182" r="2.7" fill="#FFFFFF" opacity="0.9"/>
     </g>
 
     <!-- muzzle block -->
-    <rect x="122" y="200" width="176" height="90" rx="45" fill="#1A1A1A"/>
+    <rect x="122" y="202" width="176" height="88" rx="44" fill="#1A1A1A"/>
 
     <!-- tongue -->
-    <g transform="rotate(7 270 322)"><g class="tongue">
-      <rect x="244" y="288" width="52" height="72" rx="26" fill="#F5828C" stroke="#1A1A1A" stroke-width="12"/>
-      <path d="M270 302 L 271 340" stroke="#E3697A" stroke-width="6" stroke-linecap="round"/>
+    <g transform="rotate(6 240 316)"><g class="tongue">
+      <rect x="214" y="284" width="52" height="70" rx="26" fill="#F5828C" stroke="#1A1A1A" stroke-width="9"/>
+      <path d="M240 298 L 241 332" stroke="#E3697A" stroke-width="5" stroke-linecap="round"/>
     </g></g>
-
-    <!-- neck dashes -->
-    <g stroke="#1A1A1A" stroke-width="11" stroke-linecap="round" fill="none">
-      <path d="M134 266 L 120 270"/>
-      <path d="M130 286 L 116 291"/>
-      <path d="M136 306 L 122 313"/>
-    </g>
   </g>
 
   <!-- speech bubble, well clear of the ears -->
   <g class="buoy">
-    <path d="M389 96 L 365 126 L 399 110 Z" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="11" stroke-linejoin="round"/>
-    <rect x="371" y="26" width="58" height="72" rx="29" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="11"/>
-    <path d="M400 46 L 400 66" stroke="#1A1A1A" stroke-width="12" stroke-linecap="round"/>
+    <path d="M389 96 L 365 126 L 399 110 Z" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="371" y="26" width="58" height="72" rx="29" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="7"/>
+    <path d="M400 46 L 400 66" stroke="#1A1A1A" stroke-width="9" stroke-linecap="round"/>
     <circle cx="400" cy="84" r="6.5" fill="#1A1A1A"/>
   </g>
 
