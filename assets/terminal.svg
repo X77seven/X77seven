@@ -1,175 +1,136 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="420" viewBox="0 0 880 420" role="img" aria-label="X77 — golden retriever banner">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="420" viewBox="0 0 880 420" role="img" aria-label="X77 — doodle golden retriever banner">
   <defs>
-    <linearGradient id="bgG" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#FFFAF2"/>
-      <stop offset="0.5" stop-color="#FFF2DE"/>
-      <stop offset="1" stop-color="#FFE6C4"/>
-    </linearGradient>
-    <linearGradient id="headG" x1="0.2" y1="0" x2="0.8" y2="1">
-      <stop offset="0" stop-color="#FCE6BE"/>
-      <stop offset="1" stop-color="#EDBB78"/>
-    </linearGradient>
-    <linearGradient id="bodyG" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F8DDAE"/>
-      <stop offset="1" stop-color="#E3AC5E"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.75"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
-    </radialGradient>
-
     <g id="paw">
-      <ellipse cx="0" cy="10" rx="13" ry="11"/>
-      <ellipse cx="-13" cy="-6" rx="6.4" ry="8" transform="rotate(-18 -13 -6)"/>
-      <ellipse cx="-4.6" cy="-15" rx="6.4" ry="8.6"/>
-      <ellipse cx="4.6" cy="-15" rx="6.4" ry="8.6"/>
-      <ellipse cx="13" cy="-6" rx="6.4" ry="8" transform="rotate(18 13 -6)"/>
+      <ellipse cx="0" cy="12" rx="13" ry="11"/>
+      <ellipse cx="-13" cy="-6" rx="7" ry="8.5" transform="rotate(-18 -13 -6)"/>
+      <ellipse cx="-4.6" cy="-16" rx="7" ry="9"/>
+      <ellipse cx="4.6" cy="-16" rx="7" ry="9"/>
+      <ellipse cx="13" cy="-6" rx="7" ry="8.5" transform="rotate(18 13 -6)"/>
     </g>
 
     <style>
-      .blink { animation: blink 4.6s infinite; transform-box: fill-box; transform-origin: 50% 50%; }
-      @keyframes blink { 0%, 93%, 100% { transform: scaleY(1); } 96.5% { transform: scaleY(0.08); } }
+      .blink { animation: blink 4.8s infinite; transform-box: fill-box; transform-origin: 50% 50%; }
+      @keyframes blink { 0%, 92%, 100% { transform: scaleY(1); } 96% { transform: scaleY(0.08); } }
 
-      .tail { animation: wag 1.15s ease-in-out infinite; transform-box: fill-box; transform-origin: 0% 100%; }
-      @keyframes wag { 0%, 100% { transform: rotate(-8deg); } 50% { transform: rotate(9deg); } }
+      .tongue { animation: pant 1.2s ease-in-out infinite; }
+      @keyframes pant { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
 
-      .earL { animation: earl 3s ease-in-out infinite; transform-box: fill-box; transform-origin: 38% 100%; }
-      .earR { animation: earr 3s ease-in-out infinite; transform-box: fill-box; transform-origin: 62% 100%; }
-      @keyframes earl { 0%, 100% { transform: rotate(0deg); } 40% { transform: rotate(-6deg); } 70% { transform: rotate(3deg); } }
-      @keyframes earr { 0%, 100% { transform: rotate(0deg); } 40% { transform: rotate(6deg); } 70% { transform: rotate(-3deg); } }
+      .earL { animation: earl 3.2s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 12%; }
+      .earR { animation: earr 3.2s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 12%; }
+      @keyframes earl { 0%, 100% { transform: rotate(0deg); } 45% { transform: rotate(-5deg); } 70% { transform: rotate(2deg); } }
+      @keyframes earr { 0%, 100% { transform: rotate(0deg); } 45% { transform: rotate(5deg); } 70% { transform: rotate(-2deg); } }
 
-      .tongue { animation: pant 1.3s ease-in-out infinite; }
-      @keyframes pant { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(3.5px); } }
+      .tail { animation: wag 0.95s ease-in-out infinite; transform-box: fill-box; transform-origin: 0% 100%; }
+      @keyframes wag { 0%, 100% { transform: rotate(-9deg); } 50% { transform: rotate(9deg); } }
 
-      .tag { animation: swing 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 0%; }
-      @keyframes swing { 0%, 100% { transform: rotate(-7deg); } 50% { transform: rotate(7deg); } }
-
-      .ball { animation: bounce 1.6s cubic-bezier(.5,.05,.5,.95) infinite; transform-box: fill-box; transform-origin: 50% 100%; }
-      @keyframes bounce { 0%, 100% { transform: translateY(0) scaleY(1); } 45% { transform: translateY(-26px) scaleY(1); } 50% { transform: translateY(-18px) scaleY(0.86); } 55% { transform: translateY(0) scaleY(1.1); } 60% { transform: translateY(0) scaleY(1); } }
+      .buoy { animation: float 3.4s ease-in-out infinite; }
+      @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
 
       .pulse { animation: pulse 2.6s ease-in-out infinite; }
-      @keyframes pulse { 0%, 100% { opacity: .35; } 50% { opacity: .9; } }
+      @keyframes pulse { 0%, 100% { opacity: .3; } 50% { opacity: 1; } }
     </style>
   </defs>
 
   <!-- backdrop -->
-  <rect width="880" height="420" rx="18" fill="url(#bgG)"/>
-  <ellipse cx="250" cy="200" rx="300" ry="200" fill="url(#glow)"/>
+  <rect width="880" height="420" rx="18" fill="#FFFBF3"/>
 
-  <g fill="#E3B771" opacity="0.18">
-    <use href="#paw" transform="translate(66,58) rotate(-24) scale(1.15)"/>
-    <use href="#paw" transform="translate(700,52) rotate(20) scale(1.25)"/>
-    <use href="#paw" transform="translate(818,360) rotate(-14) scale(0.95)"/>
-    <use href="#paw" transform="translate(470,392) rotate(12) scale(0.8)"/>
+  <g opacity="0.13" fill="#F6C173" stroke="#1A1A1A" stroke-width="6">
+    <use href="#paw" transform="translate(788,72) rotate(15) scale(1.2)"/>
+    <use href="#paw" transform="translate(824,348) rotate(-12) scale(0.95)"/>
+    <use href="#paw" transform="translate(452,392) rotate(10) scale(0.8)"/>
   </g>
 
-  <!-- ===== golden retriever ===== -->
-  <!-- feathered tail -->
+  <!-- ===== doodle dog ===== -->
+  <!-- tail -->
   <g class="tail">
-    <path d="M318 300 C 372 300 404 262 398 222" stroke="#E3AC5E" stroke-width="30" stroke-linecap="round" fill="none"/>
-    <path d="M386 236 C 404 228 412 210 404 196" stroke="#FCE6BE" stroke-width="16" stroke-linecap="round" fill="none"/>
-    <g stroke="#FFF6E6" stroke-width="7" stroke-linecap="round">
-      <path d="M392 214 L408 206"/>
-      <path d="M392 232 L410 232"/>
-      <path d="M386 250 L402 258"/>
-    </g>
+    <path d="M316 332 C 356 328 374 300 362 272" stroke="#1A1A1A" stroke-width="15" fill="none" stroke-linecap="round"/>
+    <path d="M316 332 C 356 328 374 300 362 272" stroke="#F6C173" stroke-width="6" fill="none" stroke-linecap="round"/>
   </g>
 
-  <!-- body + chest ruff -->
-  <ellipse cx="232" cy="302" rx="94" ry="66" fill="url(#bodyG)"/>
-  <ellipse cx="232" cy="288" rx="78" ry="44" fill="#FFF4E2"/>
-  <ellipse cx="232" cy="322" rx="58" ry="42" fill="#FFF8EC"/>
+  <!-- body -->
+  <ellipse cx="210" cy="296" rx="118" ry="100" fill="#F6C173" stroke="#1A1A1A" stroke-width="14"/>
+  <!-- feet -->
+  <ellipse cx="142" cy="366" rx="62" ry="38" fill="#F6C173" stroke="#1A1A1A" stroke-width="14"/>
+  <ellipse cx="278" cy="366" rx="62" ry="38" fill="#F6C173" stroke="#1A1A1A" stroke-width="14"/>
+  <!-- front legs -->
+  <g stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" fill="none">
+    <path d="M186 318 L 182 400"/>
+    <path d="M236 318 L 240 400"/>
+  </g>
+
+  <!-- ears (small, drooping) -->
+  <g transform="rotate(-14 80 150)"><g class="earL">
+    <ellipse cx="80" cy="150" rx="28" ry="44" fill="#F6C173" stroke="#1A1A1A" stroke-width="14"/>
+  </g></g>
+  <g transform="rotate(14 340 150)"><g class="earR">
+    <ellipse cx="340" cy="150" rx="28" ry="44" fill="#F6C173" stroke="#1A1A1A" stroke-width="14"/>
+  </g></g>
 
   <!-- head -->
-  <circle cx="232" cy="186" r="82" fill="url(#headG)"/>
+  <rect x="74" y="70" width="272" height="236" rx="102" fill="#F6C173" stroke="#1A1A1A" stroke-width="14"/>
 
-  <!-- erect ears -->
-  <g class="earL">
-    <path d="M174 148 C 144 112 136 72 152 50 C 174 68 214 96 238 110 Z" fill="#D9A055"/>
-    <path d="M182 142 C 160 112 152 82 160 64 C 178 82 206 104 226 114 Z" fill="#C88F42"/>
+  <!-- head tufts -->
+  <g stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" fill="none">
+    <path d="M172 74 C 166 56 176 48 180 58"/>
+    <path d="M212 66 C 210 48 222 46 222 56"/>
+    <path d="M252 74 C 258 58 268 56 266 66"/>
   </g>
-  <g class="earR">
-    <path d="M290 148 C 320 112 328 72 312 50 C 290 68 250 96 226 110 Z" fill="#D9A055"/>
-    <path d="M282 142 C 304 112 312 82 304 64 C 286 82 258 104 238 114 Z" fill="#C88F42"/>
-  </g>
-
-  <!-- muzzle -->
-  <ellipse cx="232" cy="224" rx="56" ry="34" fill="#FFF6E9"/>
-  <ellipse cx="174" cy="208" rx="17" ry="10" fill="#FF9E8F" opacity="0.28"/>
-  <ellipse cx="290" cy="208" rx="17" ry="10" fill="#FF9E8F" opacity="0.28"/>
 
   <!-- eyes -->
   <g class="blink">
-    <circle cx="206" cy="178" r="10.5" fill="#3A2A1E"/>
-    <circle cx="258" cy="178" r="10.5" fill="#3A2A1E"/>
-    <circle cx="209.5" cy="174" r="3.6" fill="#FFFFFF"/>
-    <circle cx="261.5" cy="174" r="3.6" fill="#FFFFFF"/>
-  </g>
-  <g stroke="#D9A055" stroke-width="3" fill="none" stroke-linecap="round">
-    <path d="M195 158 Q 206 152 217 157"/>
-    <path d="M247 157 Q 258 152 269 158"/>
+    <circle cx="166" cy="176" r="13" fill="#1A1A1A"/>
+    <circle cx="254" cy="176" r="13" fill="#1A1A1A"/>
   </g>
 
-  <!-- snout -->
-  <ellipse cx="232" cy="212" rx="15" ry="11" fill="#3A2A1E"/>
-  <path d="M232 223 Q 218 240 203 231" stroke="#3A2A1E" stroke-width="4" fill="none" stroke-linecap="round"/>
-  <path d="M232 223 Q 246 240 261 231" stroke="#3A2A1E" stroke-width="4" fill="none" stroke-linecap="round"/>
-  <g class="tongue">
-    <ellipse cx="232" cy="240" rx="13" ry="10" fill="#FF8FA3"/>
-    <path d="M232 234 L232 244" stroke="#E86A80" stroke-width="2" stroke-linecap="round"/>
+  <!-- muzzle block -->
+  <rect x="112" y="202" width="200" height="114" rx="56" fill="#1A1A1A"/>
+
+  <!-- tongue -->
+  <g transform="rotate(7 256 337)"><g class="tongue">
+    <rect x="228" y="298" width="56" height="78" rx="28" fill="#F5828C" stroke="#1A1A1A" stroke-width="12"/>
+    <path d="M258 314 L 259 356" stroke="#E3697A" stroke-width="6" stroke-linecap="round"/>
+  </g></g>
+
+  <!-- neck dashes -->
+  <g stroke="#1A1A1A" stroke-width="11" stroke-linecap="round" fill="none">
+    <path d="M128 262 L 114 266"/>
+    <path d="M124 284 L 110 289"/>
+    <path d="M130 306 L 116 313"/>
   </g>
 
-  <!-- collar + tag -->
-  <path d="M162 268 Q 232 304 302 268" stroke="#C0452A" stroke-width="15" fill="none" stroke-linecap="round"/>
-  <g class="tag">
-    <path d="M232 292 L232 300" stroke="#C9A227" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="232" cy="310" r="15" fill="#F6C445" stroke="#D9A521" stroke-width="2"/>
-    <text x="232" y="314" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#5A3E12">X77</text>
-  </g>
-
-  <!-- paws -->
-  <ellipse cx="180" cy="352" rx="30" ry="18" fill="#FFF4E2"/>
-  <ellipse cx="284" cy="352" rx="30" ry="18" fill="#FFF4E2"/>
-  <g stroke="#EFD8B4" stroke-width="2.5" stroke-linecap="round">
-    <path d="M170 346 L170 356"/><path d="M180 344 L180 356"/><path d="M190 346 L190 356"/>
-    <path d="M274 346 L274 356"/><path d="M284 344 L284 356"/><path d="M294 346 L294 356"/>
-  </g>
-
-  <!-- ball -->
-  <g class="ball">
-    <circle cx="372" cy="368" r="20" fill="#C0452A"/>
-    <path d="M356 360 Q 372 372 388 360" stroke="#FFF6E6" stroke-width="4" fill="none" stroke-linecap="round"/>
-    <path d="M358 378 Q 372 366 386 378" stroke="#FFF6E6" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- speech bubble -->
+  <g class="buoy">
+    <path d="M404 128 L 374 156 L 420 142 Z" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="11" stroke-linejoin="round"/>
+    <rect x="374" y="44" width="68" height="84" rx="34" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="11"/>
+    <path d="M408 66 L 408 92" stroke="#1A1A1A" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="408" cy="112" r="7.5" fill="#1A1A1A"/>
   </g>
 
   <!-- ===== text ===== -->
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-    <rect x="470" y="76" width="232" height="30" rx="15" fill="#7A5A18" opacity="0.10"/>
-    <text x="486" y="96" font-size="14" font-weight="700" fill="#8A6516">[ OK ]  good boy online</text>
-  </g>
+  <rect x="470" y="70" width="248" height="34" rx="17" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3.5"/>
+  <circle cx="491" cy="87" r="6.5" fill="#EE9B3A" class="pulse"/>
+  <text x="508" y="92" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14.5" font-weight="700" fill="#1A1A1A">[ OK ]  good boy online</text>
 
-  <text x="470" y="182" font-family="'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="-2">
-    <tspan fill="#4A3728">X</tspan><tspan fill="#D98A2B">77</tspan>
+  <text x="468" y="188" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="94" font-weight="900" letter-spacing="-3">
+    <tspan fill="#1A1A1A">X</tspan><tspan fill="#EE9B3A">77</tspan>
   </text>
 
-  <text x="472" y="214" font-family="'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#7A6350">
+  <text x="472" y="222" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#1A1A1A">
     I fetch bugs and bring them back.
   </text>
 
-  <path d="M472 236 L836 236" stroke="#EFD8B4" stroke-width="2"/>
+  <path d="M472 244 L 828 244" stroke="#1A1A1A" stroke-width="3.5" stroke-linecap="round"/>
 
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5">
-    <text x="472" y="266"><tspan fill="#C08548">$ whoami</tspan><tspan fill="#6B5540">  →  X77 · Xiamen, China</tspan></text>
-    <text x="472" y="292"><tspan fill="#C08548">$ cat stack.txt</tspan><tspan fill="#6B5540">  →  Python · TypeScript · Java</tspan></text>
-    <text x="472" y="318"><tspan fill="#C08548">$ git log --merged</tspan><tspan fill="#6B5540">  →  2 PRs merged upstream</tspan></text>
+    <text x="472" y="274"><tspan fill="#C97A2B" font-weight="700">$ whoami</tspan><tspan fill="#4A4A4A">  →  X77 · Xiamen, China</tspan></text>
+    <text x="472" y="300"><tspan fill="#C97A2B" font-weight="700">$ cat stack.txt</tspan><tspan fill="#4A4A4A">  →  Python · TypeScript · Java</tspan></text>
+    <text x="472" y="326"><tspan fill="#C97A2B" font-weight="700">$ git log --merged</tspan><tspan fill="#4A4A4A">  →  2 PRs merged upstream</tspan></text>
   </g>
 
-  <g>
-    <use href="#paw" transform="translate(484,352) rotate(-12) scale(0.42)" fill="#D9A96B"/>
-    <text x="502" y="358" font-family="'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13" fill="#B07C3A">
-      Pull Shark — 2 of 2 fetched
-    </text>
+  <g transform="translate(487,360) rotate(-12) scale(0.44)" fill="#F6C173" stroke="#1A1A1A" stroke-width="10">
+    <use href="#paw"/>
   </g>
-
-  <circle cx="836" cy="96" r="5" fill="#8A6516" class="pulse"/>
+  <text x="510" y="366" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1A1A1A">
+    Pull Shark — 2 of 2 fetched
+  </text>
 </svg>
