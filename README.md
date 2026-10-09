@@ -1,12 +1,15 @@
 <div align="center">
-  <img src="./assets/terminal.svg" width="880" alt="X77 — golden retriever banner" />
+  <img src="./assets/terminal.svg" width="880" alt="X77 — doodle golden retriever banner" />
 </div>
 
+<br />
 <br />
 
 <p align="center">
   <b>X77</b> &nbsp;·&nbsp; Xiamen, China &nbsp;·&nbsp; Python / TypeScript / Java
 </p>
+
+<br />
 
 <p align="center">
   I read the source before I file the report. Most of what I ship upstream is the unglamorous part —
@@ -15,11 +18,13 @@
 </p>
 
 <br />
+<br />
 
 <div align="center">
   <img src="./assets/merged.svg" width="880" alt="Fetched and merged" />
 </div>
 
+<br />
 <br />
 
 ## Now
